@@ -1,13 +1,13 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   list-style: none;
   text-decoration: none;
 }
 
-header{
+header {
   position: fixed;
   right: 0;
   top: -1%;
@@ -18,60 +18,66 @@ header{
   justify-content: space-evenly;
   padding: 33px 9%;
   background: transparent;
-
 }
 
-.hero{
+.logo {
+  position: fixed;
+  margin-top: 50px;
+}
+
+.hero {
   height: 100%;
   width: 100%;
   min-height: 100vh;
   background-image: url(images/background.png);
-  position: relative;
- 
+  position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 2rem;
 }
 
-.hero-text{
+.hero-text {
   padding-top: 18%;
   text-align: center;
 }
 
-section{
+section {
   padding: 0 15%;
 }
 
-.hero-text h5{
-  font-size: 14px;
+.hero-text h5 {
+  font-size: 20px;
   font-weight: 400;
   color: white;
-  margin-bottom: 40px;    
+  margin-bottom: 40px;
 }
 
-.hero-text h1{
-  font-family: 'Permanent Marker', cursive;
+.hero-text h1 {
+  font-family: "Permanent Marker", cursive;
   font-size: 90px;
   line-height: 1;
   color: white;
-  margin: 0 0 45px; 
+  margin: 0 0 45px;
 }
 
-.hero-text h4{
-  font-size: 18px;
+.hero-text h4 {
+  font-size: 30px;
   font-weight: 600;
   color: white;
   margin-bottom: 10px;
 }
 
-.hero-text p{
+.hero-text p {
   color: white;
-  font-size: 15px ;
+  font-size: 18px;
   line-height: 1.9;
-  margin-bottom: 40px;    
+  margin-bottom: 40px;
 }
 
-.hero-text a{
+.hero-text a {
   display: inline-block;
   color: white;
   background: #4d6195;
@@ -82,30 +88,68 @@ section{
   font-weight: 500;
   border-radius: 30px;
   text-transform: uppercase;
-  transition: all .55s ease;
+  transition: all 0.55s ease;
 }
 
-.hero-text a:hover{
-  background:transparent;
+.hero-text a:hover {
+  background: transparent;
   border: 1px solid white;
   transform: translateX(8px);
-
-}     
-.icons{
+}
+.icons {
   position: absolute;
   top: 50%;
   padding: 0 9%;
-  transform: translateY(-50%   );
+  transform: translateY(-50%);
 }
-.icons i{
+.icons i {
   display: block;
   margin: 26px 0;
   font-size: 24px;
   color: white;
-  transition: all .50s ease;
+  transition: all 0.5s ease;
 }
 
-.icons i:hover{
-  color:#4d6195;
+.icons i:hover {
+  color: #4d6195;
   transform: translateY(-5p);
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    position: relative;
+    top: 40px;
+  }
+
+  .hero-text h1 {
+    font-size: 60px;
+  }
+
+  .hero-text h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  .hero-text p {
+    color: white;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+  }
+
+  .hero-text a {
+    display: inline-block;
+    color: white;
+    background: #4d6195;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all 0.55s ease;
+  }
 }
