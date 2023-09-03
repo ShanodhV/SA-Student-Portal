@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Clear form after successful submission
         form.reset();
         // Redirect to success.html after successful submission
-        window.location.href = "../landing.html";
+        window.location.href = "../index.html";
       })
       .catch(function (error) {
         console.error("Error adding document: ", error);
