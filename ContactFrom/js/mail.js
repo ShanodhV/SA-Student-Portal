@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
         form.reset();
         // Redirect to success.html after successful submission
         window.location.href = "../index.html";
+        alert("Thank you for your suggestion");
       })
       .catch(function (error) {
         console.error("Error adding document: ", error);
