@@ -25,6 +25,10 @@ header {
   margin-top: 50px;
 }
 
+.logo img {
+  height: 100px;
+}
+
 .hero {
   height: 100%;
   width: 100%;
@@ -56,11 +60,12 @@ section {
 }
 
 .hero-text h1 {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Concert One", cursive;
   font-size: 90px;
   line-height: 1;
   color: white;
   margin: 0 0 45px;
+  font-weight: 700;
 }
 
 .hero-text h4 {
@@ -123,6 +128,10 @@ section {
 
   .hero-text h1 {
     font-size: 60px;
+  }
+
+  .logo img {
+    height: 80px;
   }
 
   .hero-text h4 {
